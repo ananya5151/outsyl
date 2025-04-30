@@ -9,7 +9,7 @@ const Feed = () => {
   useEffect(() => {
     const fetchRecommendations = async () => {
       try {
-        const res = await axios.post("http://localhost:8000/recommendations/", {
+        const res = await axios.post("https://outsyl-backend.onrender.com/recommendations/", {
           query: "jackets"
         });
         setRecommendations(res.data.recommendations);

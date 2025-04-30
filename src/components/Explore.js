@@ -10,7 +10,7 @@ const Explore = () => {
     const fetchRecommendations = async () => {
       try {
         // Fetching recommendations for a specific query ("jackets")
-        const res = await axios.post("http://localhost:8000/recommendations/", {
+        const res = await axios.post("https://outsyl-backend.onrender.com/recommendations/", {
           query: "tshirts"
         });
         setRecommendations(res.data.recommendations);

@@ -52,14 +52,20 @@ def filter_images(query=None, gender=None, category=None, subtype=None):
     result = filtered_df[['image_url', 'title_Translated', 'description_Translated', 'Type', 'Gender', 'Subtype']].to_dict(orient='records')
     return result
 
-# API endpoint to fetch recommendations based on user query and filters
+import logging
+
 @app.post("/recommendations/")
 async def get_recommendations(request: RecommendationRequest):
-    # Fetch recommendations by applying filters
+    logging.info(f"Received request with query: {request.query}")
+    
+    # Your recommendation logic
     recommendations = filter_images(
         query=request.query,
         gender=request.gender,
         category=request.category,
         subtype=request.subtype
     )
+    
+    logging.info(f"Returning recommendations: {recommendations}")
     return {"recommendations": recommendations}
+

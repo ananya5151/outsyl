@@ -24,7 +24,7 @@ const Trending = () => {
         const allItems = [];
 
         for (const theme of selectedThemes) {
-          const res = await axios.post("http://localhost:8000/recommendations/", {
+          const res = await axios.post("https://outsyl-backend.onrender.com/recommendations/", {
             query: theme,
           });
           if (res.data?.recommendations?.length > 0) {
