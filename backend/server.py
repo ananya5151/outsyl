@@ -6,10 +6,12 @@ import pandas as pd
 # Initialize FastAPI app
 app = FastAPI()
 
+
+
 # Add CORS middleware to allow frontend to communicate
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # This allows any frontend to access the API
+    allow_origins=["https://outstyl.vercel.app"],  # This allows any frontend to access the API
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
