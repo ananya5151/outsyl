@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 12px 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff4d6d; /* Logo and link color */
+}
+.search-wrapper {
+  position: relative;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 36px 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+}
+
+
+.search-input {
+  flex: 1;
+  margin: 0 20px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ff4d6d; /* Match logo color */
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e60039; /* Slightly darker pink on hover */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e60023;
+  }
+  .search-input {
+    width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  .nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+  }
+  .nav-links a:hover {
+    color: #e60023;
+  }
+  /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.feed-container,
+.explore-container,
+.trending-container {
+  margin: 20px;
+}
+
+/* Search Bar */
+.feed-search input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Feed Layout */
+.feed,
+.explore,
+.trending {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Feed Card */
+.feed-card,
+.trending-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feed-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-info {
+  margin-top: 10px;
+}
+
+.card-info .price {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-info .category {
+  color: #777;
+  font-size: 14px;
+}

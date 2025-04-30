@@ -1,0 +1,99 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    padding: 16px;
+  }
+  
+  .trending-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Feed Grid Layout - Pinterest style */
+  .trending-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  @media (max-width: 1200px) {
+    .trending-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .trending-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trending-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Feed Card Styles */
+  .feed-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Allow card height to grow dynamically */
+    justify-content: space-between;
+  }
+  
+  .feed-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-info {
+    margin-top: 10px;
+  }
+  
+  .card-info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-info p {
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .card-info .price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+  }
+  

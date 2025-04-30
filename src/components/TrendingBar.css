@@ -1,0 +1,30 @@
+.trending-bar {
+  display: flex;
+  overflow-x: auto;
+  padding: 12px 24px;
+  background-color: #fff0f5; /* light pink background */
+  border-bottom: 2px solid #ffc0cb;
+  gap: 12px;
+  scroll-behavior: smooth;
+}
+
+.trending-item {
+  flex: 0 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 10px rgba(255, 105, 150, 0.342);
+  transition: all 0.3s ease;
+}
+
+.trending-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #fcb69f, #ffdde1);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(255, 105, 180, 0.4);
+}
